@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designs</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <div class="name-tag">Karan Jajoria</div>
+    <div class="subname-tag">Compuer Science Engineering Student</div>
+    <div class="logo"><img src="assets\Profile.png" alt="Profile" /></div>
+    <nav>
+      <a href="About.html">About</a>
+      <a href="Project.html">Projects</a>
+      <a href="Design.html">Design</a>
+      <a href = "assets\resume\Karan Jajoria Resume Version 3.pdf">Resume</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>My Design Work</h2>
+    <p class="intro">Browse through my creative design panels in a carousel format.</p>
+    <div class="carousel-container">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide"><img src="assets\Design\Frame2.png" alt="Design 1"></div>
+        <div class="carousel-slide active"><img src="assets\Design\Frame1.png" alt="Design 2"></div>
+        <div class="carousel-slide"><img src="assets\Design\Frame3.png" alt="Design 3"></div>
+        <div class="carousel-slide"><img src="assets\Cypher.png" alt="Design 4"></div>
+        <div class="carousel-slide active"><img src="assets\Jett.jpg" alt="Design 5"></div>
+        <div class="carousel-slide"><img src="assets\Gekko.png" alt="Design 6"></div>
+      </div>
+    </div>
+
+    
+    <div class="nav-buttons">
+      <button onclick="slide(-1)">Previous</button>
+      <button onclick="slide(1)">Next</button>
+    </div>
+  </section>
+
+  <footer class="custom-footer">
+  <div class="footer-item">
+    <img src="assets\Footer\Mail.png" alt="Email Icon" class="footer-icon">
+    <span>Karanjajoria.965@gmail.com</span>
+  
+    <img src="assets\Footer\Git.png" alt="GitHub Icon" class="footer-icon">
+    <span><a href="https://github.com/karanjajoria" target="_blank">GitHub</a></span>
+  
+    <img src="assets\Footer\linkedin-svgrepo-com.png" alt="LinkedIn Icon" class="footer-icon">
+    <span><a href="https://www.linkedin.com/in/karanjajoria965/" target="_blank">LinkedIn</a></span>
+  </div>
+</footer>
+
+  <script>
+    let currentIndex = 1;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const track = document.getElementById('carouselTrack');
+
+    function updateSlides() {
+      slides.forEach((slide, index) => {
+        slide.classList.remove('active');
+        if (index === currentIndex) {
+          slide.classList.add('active');
+        }
+      });
+      const offset = (currentIndex - 1) * -33.333;
+      track.style.transform = `translateX(${offset}%)`;
+    }
+
+    function slide(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = slides.length - 1;
+      if (currentIndex >= slides.length) currentIndex = 0;
+      updateSlides();
+    }
+
+    updateSlides();
+  </script>
+</body>
+</html>

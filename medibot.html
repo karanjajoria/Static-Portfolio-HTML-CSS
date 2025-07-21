@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ ChatBot Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .demo-container {
+      background-color: #ffecb3;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1000px;
+      border: 8px solid white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .demo-container p {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .demo-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .demo-grid video, .demo-grid img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 12px;
+      background: white;
+      padding: 1rem;
+    }
+    .demo-grid > * {
+      flex: 1 1 400px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="name-tag">Karan Jajoria</div>
+    <div class="subname-tag">Compuer Science Engineering Student</div>
+    <div class="logo"><img src="assets\Profile.png" alt="Profile" /></div>
+    <nav>
+      <a href="About.html">About</a>
+      <a href="Project.html">Projects</a>
+      <a href="Design.html">Design</a>
+      <a href = "assets\resume\Karan Jajoria Resume Version 3.pdf">Resume</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>MediBot</h2>
+    <div class="demo-container">
+      <p>A demonstration of my healthcare assistant that responds to medical queries using natural language processing.</p>
+      <div class="demo-grid">
+        <<video controls>
+          <source src="assets\Medibot\Medibot.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>>
+        <img src="assets\Medibot\Eval matrics.png" alt="Chatbot Screenshot">
+        <img src="assets\Medibot\output.png" alt="Chatbot Screenshot">
+      </div>
+    </div>
+    <div class="subtitle-text">
+      <p>This demo showcases a healthcare assistant that can answer medical queries using natural language processing techniques. It is designed to provide accurate and reliable information to users seeking health-related advice.</p>
+      <p>By leveraging advanced NLP algorithms, the MediBot can understand user intent and deliver contextually relevant responses, making it a valuable tool for patients and healthcare professionals alike.</p>
+      <p>Feel free to access this project on Github repository <a href="https://github.com/karanjajoria/Medicos_Summarizer_Bot" target="_blank">here</a>.</p>
+    </div>
+  </section>
+
+  <footer class="custom-footer">
+  <div class="footer-item">
+    <img src="assets\Footer\Mail.png" alt="Email Icon" class="footer-icon">
+    <span>Karanjajoria.965@gmail.com</span>
+  
+    <img src="assets\Footer\Git.png" alt="GitHub Icon" class="footer-icon">
+    <span><a href="https://github.com/karanjajoria" target="_blank">GitHub</a></span>
+  
+    <img src="assets\Footer\linkedin-svgrepo-com.png" alt="LinkedIn Icon" class="footer-icon">
+    <span><a href="https://www.linkedin.com/in/karanjajoria965/" target="_blank">LinkedIn</a></span>
+  </div>
+  </footer>
+</body>
+</html>

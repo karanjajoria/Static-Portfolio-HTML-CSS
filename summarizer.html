@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ ChatBot Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .demo-container {
+      background-color: #ffecb3;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1000px;
+      border: 8px solid white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .demo-container p {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .demo-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .demo-grid video, .demo-grid img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 12px;
+      background: white;
+      padding: 1rem;
+    }
+    .demo-grid > * {
+      flex: 1 1 400px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="name-tag">Karan Jajoria</div>
+    <div class="subname-tag">Compuer Science Engineering Student</div>
+    <div class="logo"><img src="assets\Profile.png" alt="Profile" /></div>
+    <nav>
+      <a href="About.html">About</a>
+      <a href="Project.html">Projects</a>
+      <a href="Design.html">Design</a>
+      <a href = "assets\resume\Karan Jajoria Resume Version 3.pdf">Resume</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>PDF Summarizer Demo</h2>
+    <div class="demo-container">
+      <p>A demonstration of my PDF summarizer that extracts key information from documents using natural language processing.</p>
+      <div class="demo-grid">
+        <video controls align="center" style="max-width: 45%;">
+          <source src="assets\Summarizer\Mr.DOCS main test recording.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <img src="assets\Summarizer\Group 52.png" alt="Chatbot Screenshot">
+      </div>
+    </div>
+    <div class="subtitle-text">
+      <p>This demo showcases a PDF summarizer that extracts key information from documents, making it easier to digest large amounts of text quickly.</p>
+      <p>It uses advanced natural language processing techniques to identify and summarize the main points of the document, providing a concise overview.</p>
+      <p>Users can upload their own PDF files to see how the summarizer works in real-time, making it a practical tool for students, researchers, and professionals who need to process large volumes of text efficiently.</p>
+      <p>It uses <strong>Ollama's Llama3 model with 7B parameter</strong> which allows for high-quality text summarization and understanding. it optimize the process of extracting key information from documents and provide a seamless user experience.</p>
+      <p>Feel free to try it out with your own documents! <a href="https://github.com/karanjajoria/PDF-Chatbot" target="_blank">here</a>.</p>
+    </div>
+  </section>
+
+  <footer class="custom-footer">
+  <div class="footer-item">
+    <img src="assets\Footer\Mail.png" alt="Email Icon" class="footer-icon">
+    <span>Karanjajoria.965@gmail.com</span>
+  
+    <img src="assets\Footer\Git.png" alt="GitHub Icon" class="footer-icon">
+    <span><a href="https://github.com/karanjajoria" target="_blank">GitHub</a></span>
+  
+    <img src="assets\Footer\linkedin-svgrepo-com.png" alt="LinkedIn Icon" class="footer-icon">
+    <span><a href="https://www.linkedin.com/in/karanjajoria965/" target="_blank">LinkedIn</a></span>
+  </div>
+  </footer>
+</body>
+</html>
