@@ -5,24 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Me</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
+
   <header>
-    <div class="name-tag">Karan Jajoria</div>
-    <div class="subname-tag">Compuer Science Engineering Student</div>
-    <div class="logo"><img src="assets\Profile.png" alt="Profile" /></div>
-    <nav>
-      <a href="About.html">About</a>
-      <a href="Project.html">Projects</a>
-      <a href="Design.html">Design</a>
-      <a href = "assets\resume\Karan Jajoria Resume Version 3.pdf">Resume</a>
-    </nav>
-  </header>
+  <div class="header-left">
+    <div class="logo">
+      <img src="assets/Profile.png" alt="Profile" />
+    </div>
+    <div class="name-container">
+      <div class="name-tag">Karan Jajoria</div>
+      <div class="subname-tag">Computer Science Engineering Student</div>
+    </div>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="nav-menu">
+    <a href="About.html">About</a>
+    <a href="Project.html">Projects</a>
+    <a href="Design.html">Design</a>
+    <a href="assets/resume/Karan Jajoria Resume Version 3.pdf" target="_blank">Resume</a>
+  </nav>
+</header>
+
+
 
   <section class="section" id="about">
     <div class="about">
-      <img src="assets\Karan.png" alt="Karan" />
+      <img src="assets/Karan.png" alt="Karan" />
       <div class="about-text">
         <h2>About Me</h2>
         <p>I’m a software engineer with a strong interest in building practical, intelligent systems that solve real-world problems. My work blends traditional software development with modern machine learning techniques, especially in areas like natural language processing, computer vision, and offline AI tools.</p>
@@ -46,24 +61,34 @@
         <p>Academic<br><small>Score</small></p>
       </div>
     </div>
-
-
-    
   </section>
 
-  
-
   <footer class="custom-footer">
-  <div class="footer-item">
-    <img src="assets\Footer\Mail.png" alt="Email Icon" class="footer-icon">
-    <span>Karanjajoria.965@gmail.com</span>
-  
-    <img src="assets\Footer\Git.png" alt="GitHub Icon" class="footer-icon">
-    <span><a href="https://github.com/karanjajoria" target="_blank">GitHub</a></span>
-  
-    <img src="assets\Footer\linkedin-svgrepo-com.png" alt="LinkedIn Icon" class="footer-icon">
-    <span><a href="https://www.linkedin.com/in/karanjajoria965/" target="_blank">LinkedIn</a></span>
-  </div>
+    <div class="footer-item">
+      <img src="assets/Footer/Mail.png" alt="Email Icon" class="footer-icon">
+      <span>Karanjajoria.965@gmail.com</span>
+    </div>
+
+    <div class="footer-item">
+      <img src="assets/Footer/Git.png" alt="GitHub Icon" class="footer-icon">
+      <span><a href="https://github.com/karanjajoria" target="_blank">GitHub</a></span>
+    </div>
+
+    <div class="footer-item">
+      <img src="assets/Footer/linkedin-svgrepo-com.png" alt="LinkedIn Icon" class="footer-icon">
+      <span><a href="https://www.linkedin.com/in/karanjajoria965/" target="_blank">LinkedIn</a></span>
+    </div>
   </footer>
+
+  <script>
+    // Mobile nav toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>
